@@ -4,8 +4,11 @@ Package Based on https://github.com/reactjs/react-router-tutorial
 ___
 
 ###What is this repo?
+The intent of this repo is to show the simplicity of an Express static-asset server.
+
 The Node server listens for browser requests and responds with our bundled React application. The React components are
-simple in design to focus on the structure of this app. Webpack is used to transpile and bundle Javascript. NPM serves as our task runner.
+simple in design to focus on the structure of this app. NPM serves as our task runner.Webpack is used to transpile and
+bundle our Javascript.
 
 <img src="webpack.png"></src>
 
@@ -18,8 +21,6 @@ production server...in this case our production server is Express -- serving our
 Express in development mode as well, but the webpack-dev-server is triggered by webpack builds to refresh with current
 content.
 
----
-
 In contrast, the local dev server is a package called webpack-dev-server. Once you start the app in dev mode,
 
 `npm start`
@@ -29,18 +30,16 @@ to your browser. If you will keep your browser window open, webpack will watch y
 automatically with your changes.
 
 ___
-
-The intent of this repo is to show the simplicity of an Express server providing a React / React Router app. Its serves
-as a good foundation for Redux. When you understand this, move on to refactoring Redux into this app.
-
-
 ### Setup
+
 `npm install`
 
+---
 ### Running Local
 
 `npm start`
 
-### Simulate Production
+---
+### Simulate production environment
 
 `NODE_ENV=production npm start`
