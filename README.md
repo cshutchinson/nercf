@@ -4,9 +4,10 @@ Package Based on https://github.com/reactjs/react-router-tutorial
 ___
 
 ###What is this repo?
-This repo is a Node 7.6 running Express. The node server listens for browser requests and responds with
-our bundled React application. The Modules are very simple, but that is the intent. Webpack is used to transpile and
-bundle our Javascript. NPM serves as our task runner.
+The Node server listens for browser requests and responds with our bundled React application. The React components are
+simple in design to focus on the structure of this app. Webpack is used to transpile and bundle Javascript. NPM serves as our task runner.
+
+<img src="webpack.png"></src>
 
 React Router serves to route requests within the browser in a SPA ('single page app'). React Router will provide the
 appropriate React components based on path based routing on the URL. The SPA is loaded once from the Express server.
