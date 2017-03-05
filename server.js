@@ -4,12 +4,7 @@ var compression = require('compression');
 
 var app = express();
 
-var logger = function (req, res, next) {
-  console.log(res);
-  next();
-};
 app.use(compression());
-app.use(logger)
 
 // serve static stuff like index.css
 app.use(express.static(path.join(__dirname, 'public')));
@@ -20,7 +15,8 @@ app.get('/', function(request, response) {
 });
 
 app.get('/*', function(request, response) {
-  response.redirect(301, '/');
+  response.sendFile(path.join(__dirname, 'public', 'index.html'));
+  // response.redirect(301, '/')
 })
 
 var PORT = process.env.PORT || 8080;
